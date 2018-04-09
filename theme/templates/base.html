@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="theme/css/bootstrap.css">
+        <link rel="stylesheet" href="theme/css/style.css">
+        <link rel="icon" type="image/png" href="theme/images/Bumble-Bee-300px.png">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <section id="navBar">
+            {% include 'navbar.html' %}
+        </section>
+
+        <section class="container-fluid" id="pageWrapper">
+            <div class="row">
+                <div class="sideBar col-md-3">
+                    {% include 'sidebar.html' %}
+                </div>
+                <div class="pageContent col-md-9">
+                    {% block content %} {% endblock %}                      
+                </div>
+                    
+            </div>
+        </section>
+
+        
+        <script src="theme/js/jquery.min.js"></script>
+        <script src="theme/js/popper.min.js"></script>
+        <script src="theme/js/bootstrap.min.js"></script>
+    </body>
+</html>

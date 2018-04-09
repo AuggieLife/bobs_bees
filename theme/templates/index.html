@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}{{ SITENAME }}{% endblock %}
+{% block content %}
+
+{% include 'header.html' %}
+
+{% for article in articles_page.object_list %}
+	{% if loop.index is odd %}
+		<div class="card-deck index-card-deck">
+			{% include 'index-card.html' %}
+			{% if loop.index == loop.length %}
+				</div>
+			{% endif %}
+		
+	{% else %}
+		{% include 'index-card.html' %}
+		</div>
+
+	{% endif %}
+
+{% endfor %}
+
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+
+{% endblock %}

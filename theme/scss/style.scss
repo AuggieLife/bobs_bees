@@ -1,0 +1,122 @@
+$bg-color: #FFFFE4FF;
+$primary-color: #FFFF00FF;
+$dark-overlay: rgba(0,0,0,0.7);
+
+body{
+	background: $bg-color;
+}
+
+#navBar {
+	.navbar{
+		background-color: $primary-color;
+		border-bottom: solid 2px #000;
+	}
+
+	a {
+		color: #000;
+	}	
+}
+
+#pageWrapper{
+	padding-top: 4rem;
+	.sideBar{
+		min-height: 100%;
+		padding-top: 0.5rem;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		border: solid 2px #000;
+		background-color: $primary-color;
+	}
+	.sideBar-header-image{
+		padding: 0.5rem;
+		width: 100%;
+		border: solid 2px #000;
+	}
+
+	.fa{
+		color: $primary-color;
+		background: #000;
+		padding: 4px;
+		border-radius:5px;
+		font-size: 2rem;
+	}
+
+	.index-card-image{		
+		max-height: 10rem;		
+	}
+
+	.my-overlay{
+		color: $primary-color;
+		background: #000;
+		opacity: 0.75;
+		max-height: 10rem;
+	}
+
+	@media screen and (min-width : 576px){
+    .index-card{
+    max-width: 46% !important;
+    
+    }
+}
+	.index-card{
+	
+	
+		border: solid 2px #000;
+		margin-top: 1rem;
+
+		a {
+			color: $primary-color;
+		}
+	}
+	.card-date{
+		margin-bottom: -0.1rem;
+	}
+
+	.card-author{
+	}
+
+	.my-card-footer{
+		a {
+			background-color: #000;
+		}
+	}
+	
+	#home-section{
+		background-image: url('../images/header.jpeg');
+		min-height: 300px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fluid;
+		border: solid 2px #000;
+
+		
+	}
+	.dark-overlay{
+		background-color: $dark-overlay;
+		background-size: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 300px;
+		height: 100%
+	}
+
+	.my-message{
+		color: $primary-color;
+		padding-top: 2.5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		text-align: center;
+	}
+
+	.paginator{
+		padding-top: 1rem;
+		text-align: center;
+	}
+	
+}
+
+
+
+
